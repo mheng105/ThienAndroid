@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Read">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/anh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/id_photo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_imagedefault"></ImageView>
+
+            <Button
+                android:id="@+id/id_btn_upload"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/icon_repair"
+                android:textColor="#FFFFFF" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/id_txt_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/pacifico"
+            android:text="TIÊU ĐỀ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#006633"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/anh"></TextView>
+        <EditText
+            android:id="@+id/id_edt_content"
+            android:background="@drawable/botron_editread"
+            android:layout_gravity="center"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/id_txt_title"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:minLines="1"
+            android:enabled="false"
+            android:maxLines="15"/>
+
+        <Button
+            android:id="@+id/id_btn_xn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_edt_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/botron_button"
+            android:text="Sửa"
+            android:fontFamily="@font/pacifico"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</ScrollView>

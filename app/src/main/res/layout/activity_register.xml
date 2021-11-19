@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_app"
+    tools:context=".Activity.Register">
+    <Button
+        android:id="@+id/btnreturn"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron_buttonver2"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20sp"
+        android:text="Trở lại"
+        android:textColor="#FFFFFF"></Button>
+    <TextView
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="50dp"
+        android:text="ĐĂNG KÝ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/pacifico"
+        android:textColor="#006633"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginLeft="75dp"
+        android:text="TÀI KHOẢN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/pacifico"
+        android:textColor="#006633"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <RelativeLayout
+        android:layout_margin="20sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTK"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10sp"
+            android:text="TK:"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/pacifico"
+            android:paddingTop="5dp"
+            android:paddingLeft="12dp"
+            android:background="@drawable/botron_button"></TextView>
+
+        <EditText
+            android:id="@+id/edtusename"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/botron_edittext"
+            android:layout_marginLeft="50dp"
+            android:hint="Tài khoản đăng nhập"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10sp"
+            android:text="MK:"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/pacifico"
+            android:paddingTop="5dp"
+            android:paddingLeft="12dp"
+            android:background="@drawable/botron_button"></TextView>
+
+        <EditText
+            android:id="@+id/edtpass"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/botron_edittext"
+            android:layout_marginLeft="50dp"
+            android:password="true"
+            android:hint="Mật khẩu đăng ký"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/botron_button"
+            android:fontFamily="@font/pacifico"
+            android:paddingLeft="1dp"
+            android:paddingTop="5dp"
+            android:text="nhập lại"
+            android:textColor="#FFFFFF"></TextView>
+
+        <EditText
+            android:id="@+id/edtrepass"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/botron_edittext"
+            android:layout_marginLeft="50dp"
+            android:textStyle="italic"
+            android:hint="Nhập lại mật khẩu"></EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:background="@drawable/botron_button"
+        android:textColor="#FFFFFF"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10dp"
+        android:text="ĐĂNG KÝ"></Button>
+
+
+</LinearLayout>

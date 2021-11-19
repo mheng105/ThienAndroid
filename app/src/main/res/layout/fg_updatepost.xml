@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.UpdatePost">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_ver2">
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:layout_marginTop="10px"
+            android:layout_gravity="center"
+            android:fontFamily="@font/pacifico"
+            android:text="THÊM BÀI"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#006633"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="TÀI KHOẢN:"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginRight="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <EditText
+                android:id="@+id/edtTK"
+                android:background="@drawable/botron_edittext"
+                android:enabled="false"
+                android:layout_width="250sp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:hint="Tên tài khoản"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="32sp"
+                android:text="TIÊU ĐỀ:"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <EditText
+                android:id="@+id/edttitle"
+                android:background="@drawable/botron_edittext"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Tên tiêu đề"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="32sp"
+                android:text="THỂ LOẠI:"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <Spinner
+                android:id="@+id/spin_kind"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="NỘI DUNG:"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="left"
+                android:layout_marginRight="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <EditText
+                android:id="@+id/edtcontent"
+                android:background="@drawable/botron_editread"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:minLines="1"
+                android:maxLines="10">
+
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnimage"
+            android:background="@drawable/botron_buttonver2"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:text="Ảnh"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/pacifico">
+        </Button>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp">
+        <ImageView
+            android:id="@+id/id_photo"
+            android:src="@drawable/icon_imagedefault"
+            android:layout_width="300dp"
+            android:layout_height="150dp"></ImageView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnadd"
+                android:background="@drawable/botron_button"
+                android:text="Add"
+                android:textColor="#FFFFFF"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="50sp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat"></Button>
+            <Button
+                android:id="@+id/btncancel"
+                android:background="@drawable/botron_button"
+                android:textColor="#FFFFFF"
+                android:text="Cancel"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat"></Button>/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
